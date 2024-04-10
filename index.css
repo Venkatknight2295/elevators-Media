@@ -534,6 +534,7 @@ z-index: 2;
         height: 100vh;
         position: relative;
         margin: 2rem 2rem;
+        margin-top: 16.5vw;
     }
     .page7-div1{
         overflow: hidden;
