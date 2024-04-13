@@ -286,6 +286,14 @@ nav>h4{
     }
 
     @media screen and (max-width:450px) {
+        #page1-content nav h3{
+            font-size: 2vh;
+            padding-top: 2.5vh;
+        }
+        #page1-content nav h4{
+            font-size: 2vh;
+            padding-top: 2.5vh;
+        }
         .first_part_menu{
             height: 22vh;
             width: 37vh;
@@ -314,6 +322,7 @@ nav>h4{
         #menu>nav{
             font-size: 4vw;
         }
+        
       
     }
 

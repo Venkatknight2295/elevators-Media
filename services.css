@@ -138,7 +138,35 @@ color: #fff5ea;
 background-color: black;
 }
 
+.menu_lower_part{
+    padding-top: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: nb;
+}
+.menu_lower_part>h1{
+    font-size: 1.5vw;
+    font-weight: 100;
+}
+.menu_lower_part>h1>span{
+    font-weight: 100;
+    font-family: rejoy;
+    padding: 0rem .3rem;
+}
 
+.menu_lower_part>h1>span>i{
+    padding: 0rem .2rem;
+    transform: rotate(25deg);
+    transition: all 0.3s;
+
+}
+
+.menu_lower_part>h1>span>i:hover{
+    transform: rotate(90deg);
+}
 
 
 
@@ -723,6 +751,15 @@ nav{
     border-radius: 50px;
 }
 @media screen and (max-width:700px){
+    
+    #page1-content nav h3{
+        font-size: 2vh;
+        padding-top: 2.5vh;
+    }
+    #page1-content nav h4{
+        font-size: 2vh;
+        padding-top: 2.5vh;
+    }
 
     .content-2{
         height: 60vh;
@@ -754,13 +791,148 @@ nav{
 
    .part-7 {
     
-    width: 100vh;
+    width: 100%;
    }
    #demo{
     padding: 2vw 2vw;
-    font-size: 0.5rem;
+    font-size: 1rem;
    }
+   .second_part_menu li {
+    font-size: 2.3vh;
+}
+.second_part_menu  li button {
+    font-size: 1.4vh;
+}
    
 }
+
+@media screen and (max-width:450px){
+    .first_part_menu{
+        height: 22vh;
+        width: 37vh;
+    }
+    .menu_second_part{
+        flex-direction: column;
+     padding-left: 0rem;
+     padding-right: 0rem;
+    }
+
+    .second_part_menu{
+        display: flex;
+    }
+
+    .second_part_menu>li{
+        padding: .5rem .2rem;
+    }  
+    .second_part_menu a {
+        text-decoration: none;
+      }
+
+    #menu>hr{
+        margin-top: 0rem;
+    }
+    .menu_lower_part>h1{
+        font-size: 2.8vw;
+    }
+
+    #menu>nav{
+        font-size: 4vw;
+    }
+
+    #page1-content nav h3{
+        font-size: 2vh;
+        padding-top: 2.5vh;
+    }
+    #page1-content nav h4{
+        font-size: 2vh;
+        padding-top: 2.5vh;
+    }
+
+    .content-2{
+        height: 60vh;
+
+    }
+    .part-2{
+        height: 60vh;
+    }
+
+    .top-part-3 h4{
+        font-size: 1rem;
+    }
+    .cta-txt h2{
+        font-size: .73rem;
+    }
+    .cta-book{
+        padding: 2.5vw 3.5vw;
+    }
+    .part-3{
+        height: 15vh;
+    }
+    .part-5 p{
+        font-size: 1rem;
+    }
+   .rght-top-6 button{
+    padding: 2.5vw 4vw;
+    font-size:.8rem ;
+   }
+   .rght-btm-6 h2{
+    font-size: 1.3rem;
+   } 
+   .rght-btm-6 p{
+    font-size: 1.1rem;
+   }
+   .part-7 {
+    width: 100%; /* Set width to 100% for responsiveness */
+}
+.text-area-hover h1{
+    font-size: 2rem;
+}
+.text-area-hover h2{
+    font-size: 2rem;
+}
+.text-area h1{
+    font-size: 2rem;
+}
+.text-area h2{
+    font-size: 2rem;
+}
+.our-work-txt-div {
+    height: auto; /* Set height to auto for responsiveness */
+}
+
+.our-work-txt {
+    height: auto; /* Set height to auto for responsiveness */
+}
+
+/* Adjust positioning of 'Our' and 'Work' headings */
+#our {
+    left: 5%; /* Adjust left position */
+}
+
+#work {
+    right: 5%; /* Adjust right position */
+}
+   #demo{
+    padding: 2vw 2vw;
+    font-size: 0.9rem;
+   }
+   
+   .rght-part-4 h1{
+    font-size: 1.3rem;
+   }
+   .rght-part-4 p{
+    font-size: .8rem;
+   }
+   .lft-top-6 h1{
+    font-size: 2rem;
+   }
+
+   .scroll-down h3{
+    font-size: 1rem;
+   }
+  
+
+}
+
 
 

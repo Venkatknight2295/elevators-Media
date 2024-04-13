@@ -786,6 +786,18 @@ z-index: 2;
 
     @media screen and (max-width:700px) {
 
+        #page1-content h3{
+            font-size: 2vh;
+            padding-top: 2.5vh;
+        }
+        #page1-content h4{
+            font-size: 2vh;
+            padding-top: 2.5vh;
+        }
+        #page1-content span{
+            font-size: 13vh;
+        }
+
         .loader{
             height: 100vh;
         }
@@ -799,11 +811,11 @@ z-index: 2;
         }
 
         .upper-part-page2>div>h1{
-            font-size: 2.8vw;
+            font-size: 3.2vw;
         }
 
         .upper-part-page2>h1{
-            font-size: 2.8vw;
+            font-size: 3.2vw;
         }
 
         #main{
@@ -835,7 +847,13 @@ z-index: 2;
             font-size: 3.6vw;
             margin-bottom: 10%;
         }
-
+         .elem h4{
+          font-size: 1vh;
+         }
+         .elem-part2 h1{
+          font-size: 1vh;
+         } 
+         
         #page4{
             min-height: 100vh;
             flex-direction: column;
@@ -868,6 +886,9 @@ z-index: 2;
         #page7{
             height: 35vh;
             padding-top: 3vh;
+        }
+        .page7-div1>span{
+            font-size: 3.6vw;
         }
         #page90{
             bottom: 6vh;
@@ -903,15 +924,28 @@ z-index: 2;
         }
 
         .page10_first_lowerpart>h1{
-            font-size: 3.5vw;
+            font-size: 3.7vw;
         } 
 
         .page10_first_lowerpart >button{
-            font-size: 4vw;
+            font-size: 4.3vw;
         }
 
         #page10_first_lowerpart>h3{
-            font-size: 3vw;
+            font-size: 3.4vw;
+        }
+        .page10_lower_part span{
+            font-size: 13vh;
+        }
+        .swiper-slide img{
+            width: 32%;
+            height: 100%;
+        }
+        .second_part_menu li {
+            font-size: 2.3vh;
+        }
+        .second_part_menu  li button {
+            font-size: 1.4vh;
         }
     }
 
