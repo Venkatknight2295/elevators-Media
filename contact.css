@@ -242,6 +242,10 @@ nav>h4{
 
     @media screen and (max-width:700px) {
 
+        h1{
+            font-size: 6.4rem;
+            margin: 1.5rem;
+        }
         .loader{
             height: 100vh;
         }
