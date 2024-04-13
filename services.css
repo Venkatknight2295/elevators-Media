@@ -17,7 +17,7 @@
     box-sizing: border-box;
     font-family: FontOne;
     font-weight: 400;
-    cursor: url("./custome/cursor.png"), auto;
+    cursor: url("./cursor.png"), auto;
 }
 html , body{
     height: 100%;

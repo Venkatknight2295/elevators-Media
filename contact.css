@@ -10,7 +10,7 @@
 *{
     margin: 0;
     padding: 0;
-    cursor: url("./custome/cursor.png"), auto;
+    cursor: url("./cursor.png"), auto;
    
     box-sizing: border-box;
 }
