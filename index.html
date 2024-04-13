@@ -37,10 +37,9 @@
                         <video src="https://prismic-io.s3.amazonaws.com/rejouice/3c8eec5e-c857-4fd3-9add-a9e6035a160c_RJ-2.0-Video+background+5_1+%281%29.mp4" autoplay loop muted></video>
                     </div>
                     <div class="second_part_menu">
-                        <li>Home</li>
-                        <li>Work</li>
-                        <li>Service & Models</li>
-                        <li>About</li>
+                        <li onclick="redirectTo('index.html')">Home</li>
+                        <li onclick="redirectTo('services.html')" >Service & Models</li>
+                        <li onclick="scrollToSection('page90')">About</lion>
                         <li>Contact</li>
                         <li><button>Take a seat</button></li>
                     </div>
@@ -227,7 +226,7 @@
                 </span>
             </div>
         </div>
-
+         
 
         <div id="page8">
             <div class="page8-upper">
@@ -302,6 +301,17 @@
     </div>
 
 
+   
+    <script>
+       
+        function redirectTo(url) {
+          window.location.href = url;
+        }
+        function scrollToSection(sectionId) {
+            var section = document.getElementById(sectionId);
+            section.scrollIntoView({behavior: 'smooth'});
+        }
+      </script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
