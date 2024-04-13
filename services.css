@@ -3,12 +3,21 @@
     src: url(./Assets/Font.ttf);
 }
 
+@font-face {
+    font-family: nb;
+    src: url(./custome/NBInternationalProBoo.ttf);
+}
+@font-face {
+    font-family: rejoy;
+    src: url(./custome/Rejouice-Headline.ttf);
+}
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: FontOne;
     font-weight: 400;
+    cursor: url("./custome/cursor.png"), auto;
 }
 html , body{
     height: 100%;
@@ -16,11 +25,162 @@ html , body{
     
 }
 
-#main{
+
+.loader{
+    height: 100vh;
     width: 100%;
-    min-height: 100vh;
+    background-color: black;
+    color: #fff5ea;
+    position: absolute;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: nb;
+}
+
+#page1{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+}
+
+#menu{
+    position: absolute;
+    z-index: 2;
+    background-color: #00bf63;
+    height: 0;
+    width: 100%;
+    overflow: hidden;
+
+}
+
+#menu>nav{
+    padding-top: 1.5rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: nb;
+    font-size: 1vw;
     
 }
+
+.first_part_menu{
+    
+    
+    height: 35vh;
+    width: 25vw;
+
+}
+
+.first_part_menu>video{
+height: 100%;
+width: 100%;
+object-fit: cover;
+}
+
+
+
+
+#menu>hr{
+    margin-top: 1.5rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    border: 1px solid black;
+    /* padding-bottom: 1rem; */
+   
+
+}
+
+
+#menu>nav>h1{
+    font-weight: 100;
+}
+
+
+
+.menu_second_part{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1.5rem;
+    padding-left: 2rem;
+    padding-right: 10rem;
+    margin-top: 4vw;
+    
+
+}
+
+.second_part_menu>li{
+    
+    font-weight: 500;
+    letter-spacing: -1px;
+    font-size: 3vw;
+    font-family: nb;
+    list-style: none;
+    list-style-type: none;
+    
+}
+
+.second_part_menu>li>button{
+    font-size: 2vw;
+    padding: .5rem;
+    border-radius: .5rem;
+    border: 1px solid black;
+    background-color: transparent;
+    transition: all 0.3s;
+}
+
+.second_part_menu>li>button:hover{
+color: #fff5ea;
+background-color: black;
+}
+
+
+
+
+
+
+
+#page1-content{
+    height: 100%;
+    width: 100%;
+    
+    color:#fff5ea;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+#page1-content>nav{
+    height: 7.813vw;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2vw 3vw;
+    font-family:nb;    
+}
+
+
+nav>h3{
+    font-size: 1.4vw;
+    font-weight: 100;
+
+}
+
+nav>h4{
+    font-size: 1.4vw;
+    font-weight: 100;
+}
+
+
+
+
+
 
 
 nav{
@@ -562,6 +722,45 @@ nav{
     border: none;
     border-radius: 50px;
 }
+@media screen and (max-width:700px){
 
+    .content-2{
+        height: 60vh;
+
+    }
+    .part-2{
+        height: 60vh;
+    }
+
+    .top-part-3 h4{
+        font-size: 1rem;
+    }
+    .cta-txt h2{
+        font-size: .73rem;
+    }
+    .part-3{
+        height: 15vh;
+    }
+   .rght-top-6 button{
+    padding: 2.5vw 4vw;
+    font-size:.6rem ;
+   }
+   .rght-btm-6 h2{
+    font-size: 1rem;
+   } 
+   .rght-btm-6 p{
+    font-size: 0.7rem;
+   }
+
+   .part-7 {
+    
+    width: 100vh;
+   }
+   #demo{
+    padding: 2vw 2vw;
+    font-size: 0.5rem;
+   }
+   
+}
 
 

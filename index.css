@@ -828,11 +828,12 @@ z-index: 2;
         }
 
         #page3{
-            height: 40vh;
+            height: 15vh;
         }
 
         .page3-lower>h2{
             font-size: 3.6vw;
+            margin-bottom: 10%;
         }
 
         #page4{
@@ -866,8 +867,14 @@ z-index: 2;
 
         #page7{
             height: 35vh;
+            padding-top: 3vh;
         }
-
+        #page90{
+            bottom: 6vh;
+        }
+        #page90 h1{
+            margin-top: 5vh;
+        }
         #page8{
             height: 35vh;
         }
@@ -926,7 +933,9 @@ z-index: 2;
         .second_part_menu>li{
             padding: .5rem .2rem;
         }  
-        
+        .second_part_menu a {
+            text-decoration: none;
+          }
 
         #menu>hr{
             margin-top: 0rem;
@@ -949,7 +958,7 @@ z-index: 2;
         #page2{
             height: 14vh;
         }
-
+       
         .box{
             width:48.5%
         }
@@ -962,8 +971,9 @@ z-index: 2;
             font-size: 2.6vw;
         }
         #page7{
-            height: 23vh;
+            height: 20vh;
         }
+        .page
 
         #page9{
             height: 70vh;

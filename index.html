@@ -39,8 +39,7 @@
                     <div class="second_part_menu">
                         <li onclick="redirectTo('index.html')">Home</li>
                         <li onclick="redirectTo('services.html')" >Service & Models</li>
-                        <li onclick="scrollToSection('page90')">About</lion>
-                        <li>Contact</li>
+                        <li onclick="redirectTo('contact.html')">Contact</li>
                         <li><button>Take a seat</button></li>
                     </div>
                 </div>
@@ -302,16 +301,6 @@
 
 
    
-    <script>
-       
-        function redirectTo(url) {
-          window.location.href = url;
-        }
-        function scrollToSection(sectionId) {
-            var section = document.getElementById(sectionId);
-            section.scrollIntoView({behavior: 'smooth'});
-        }
-      </script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"

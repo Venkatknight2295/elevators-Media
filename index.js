@@ -385,4 +385,35 @@ function menu(){
     });
 }
 menu();
+gsap.to("#page3>div>div>h1", {
+    opacity: 0,
+    duration: 1,
+    scrollTrigger: {
+        trigger: "#page3>div>div>h1",
+        start: "top center",
+        end: "bottom center",
+        scrub: true
+    }
+});
+
+// Check if the target element exists before animating it
+var page9_h1 = document.querySelector(".page9_h1");
+if (page9_h1) {
+    gsap.to(page9_h1, {
+        opacity: 0,
+        duration: 1,
+        scrollTrigger: {
+            trigger: page9_h1,
+            start: "top center",
+            end: "bottom center",
+            scrub: true
+        }
+    });
+}
+
+function redirectTo(url) {
+    window.location.href = url;
+  }
+
+
 

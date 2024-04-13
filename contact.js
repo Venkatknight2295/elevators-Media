@@ -26,6 +26,38 @@ ScrollTrigger.scrollerProxy("#main", {
 
 locomotive();
 
+function loader(){
+
+
+  var t1=gsap.timeline();
+  t1.from(".loader>h3",{
+      x:40,
+      stagger:0.2,
+      duration:1,
+      opacity:0
+  })
+
+
+  t1.to(".loader>h3",{
+      x:-40,
+      stagger:0.1,
+      duration:.7,
+      opacity:0
+  })
+  
+  t1.to(".loader",{
+      opacity:0,
+      duration:.3
+  });
+
+  t1.to(".loader",{
+      display:"none"
+  })
+
+
+}
+
+loader();
 function menu(){
     var open_menu=document.querySelector(".open_menu");
     var close_menu=document.querySelector('.menu_close');
@@ -61,3 +93,6 @@ function menu(){
 }
 menu();
 
+function redirectTo(url) {
+  window.location.href = url;
+}

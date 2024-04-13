@@ -10,7 +10,8 @@
 *{
     margin: 0;
     padding: 0;
-    
+    cursor: url("./custome/cursor.png"), auto;
+   
     box-sizing: border-box;
 }
 
@@ -24,6 +25,24 @@ body{
     background-color: #050404;
 }
 
+.loader{
+    height: 100vh;
+    width: 100%;
+    background-color: black;
+    color: #fff5ea;
+    position: absolute;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: nb;
+}
+
+.contact{
+    font-size: 8rem;
+   margin-bottom: 18vw;
+   font-family: rejoy;
+}
 
 
 #page1{
@@ -167,6 +186,7 @@ background-color: black;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
+  
     
 }
 #page1-content>nav{
@@ -292,3 +312,124 @@ nav>h4{
         }
       
     }
+
+    
+.secContact {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 30px;
+    gap: 20px;
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 20px;
+  }
+  .secPhone {
+    width: 200px;
+    height: 40px;
+    border-radius: 10px;
+    box-shadow: 1px 0 10px 0 #fff5ea;
+    background: linear-gradient(
+        132deg,
+        #050404,
+       #fff5ea
+    );
+    background-size: 300%;
+    background-position: 0;
+    animation: moveGradient 8s alternate infinite;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+  }
+  .secPhone::after {
+    content: "";
+    position: absolute;
+    width: 155px;
+    height: 34px;
+    margin: 0 3px 0 42px;
+    border-radius: 8px;
+    background-color: black;
+  }
+  .phone {
+    width: 25px;
+    height: 25px;
+    margin-left: 11px;
+    margin-right: 18px;
+    background: url("./icon-whatsapp-50.png") no-repeat;
+    background-size: cover;
+    z-index: 10;
+  }
+  .secPhone:hover {
+    box-shadow: 0px 0 15px 0 #00bf63;
+    font-weight: bolder;
+  }
+
+  .secPhone:active {
+    scale: 0.9;
+  }
+  .phoneNumber {
+    z-index: 10;
+  }
+  
+  .secMail {
+    width: 200px;
+    height: 40px;
+    border: none;
+    text-decoration: none;
+    color: white;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    box-shadow: 1px 0 10px 0  #fff5ea ;
+    background: linear-gradient(
+      132deg,
+       #050404,
+      #fff5ea
+      
+    );
+    background-size: 300%;
+    background-position: 0;
+    animation: moveGradient 8s alternate infinite;
+  }
+  .secMail:hover {
+    font-weight: bolder;
+    box-shadow: 0px 0 15px 0 #00bf63;
+  }
+  .secMail:active {
+    scale: 0.9;
+  }
+  .mail {
+    width: 30px;
+    height: 30px;
+    background: url("./icon-envelope-64.png") no-repeat;
+    background-size: cover;
+  }
+  
+  .secSocial {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  .social {
+    width: 55px;
+    height: 55px;
+    border-radius: 5px;
+  }
+  .social:nth-of-type(1) {
+    background: url("./Instagram-Logo-PNG-HD-Image.png") no-repeat;
+    background-size: cover;
+    box-shadow: 1px 0 25px 0 #fff5ea;
+  }
+  .social:hover {
+   
+    scale: 1.1;
+    box-shadow: 0px 0 15px 0 #00bf63;
+  }
+  .social:active {
+    filter: invert(100%);
+    scale: 0.9;
+  }
+  

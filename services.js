@@ -1,4 +1,35 @@
+function loader(){
 
+
+    var t1=gsap.timeline();
+    t1.from(".loader>h3",{
+        x:40,
+        stagger:0.2,
+        duration:1,
+        opacity:0
+    })
+  
+  
+    t1.to(".loader>h3",{
+        x:-40,
+        stagger:0.1,
+        duration:.7,
+        opacity:0
+    })
+    
+    t1.to(".loader",{
+        opacity:0,
+        duration:.3
+    });
+  
+    t1.to(".loader",{
+        display:"none"
+    })
+  
+  
+  }
+  
+  loader();
 
 
 const lenis = new Lenis()
@@ -186,3 +217,42 @@ tl7.to(".scroll-img",{
     marginTop:"-300%",
 })
 
+
+function menu(){
+    var open_menu=document.querySelector(".open_menu");
+    var close_menu=document.querySelector('.menu_close');
+    var menu=document.querySelector("#menu");
+    var video=document.querySelector(".first_part_menu>video")
+    
+    if(window.innerWidth<430){
+        var hmob=350;
+    }
+    else{
+        var hmob=430;
+    }
+
+
+    open_menu.addEventListener('click',function(){
+        video.play();
+        gsap.to(menu, {
+            height: hmob,  // Set the target height
+            duration: 1, // Animation duration in seconds
+            ease: "power2.inOut", // Easing function
+        });
+    })
+
+
+    close_menu.addEventListener("click", function () {
+        video.pause();
+        gsap.to(menu, {
+            height: 0,  // Set the target height
+            duration: 1, // Animation duration in seconds
+            ease: "power2.inOut", // Easing function
+        });
+    });
+}
+menu();
+
+function redirectTo(url) {
+    window.location.href = url;
+  }
