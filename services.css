@@ -848,18 +848,7 @@ nav{
         font-size: 2vh;
         padding-top: 2.5vh;
     }
-     .text-area h1{
-        margin-left: 2vh;
-        
-     }
-     .text-area-hover h1{
-        margin-left: 1.8vh;
-        margin-bottom: 5vh;
-     }
-     .text-area-hover h2{
-        
-        margin-bottom: 4.5vh;
-     }
+    
     .content-2{
         height: 60vh;
 
@@ -896,18 +885,7 @@ nav{
    .part-7 {
     width: 100%; /* Set width to 100% for responsiveness */
 }
-.text-area-hover h1{
-    font-size: 2rem;
-}
-.text-area-hover h2{
-    font-size: 2rem;
-}
-.text-area h1{
-    font-size: 2rem;
-}
-.text-area h2{
-    font-size: 2rem;
-}
+
 .our-work-txt-div {
     height: auto; /* Set height to auto for responsiveness */
 }
